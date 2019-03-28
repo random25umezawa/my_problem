@@ -76,16 +76,14 @@ int main() {
 	int seed;
 	cin >> seed;
 	rnd = mt19937(seed);
-	for(int i = 0; i < 5; i++) {
+	for(int i = 0; i < 1; i++) {
 		case_random(2+get_rand(5),2+get_rand(5),2+get_rand(5),5,5);
 	}
-	for(int i = 0; i < 5+get_rand(15); i++) {
+	for(int i = 0; i < 1+get_rand(3); i++) {
 		case_random(25+get_rand(125),125+get_rand(625),625+get_rand(3125),125,625);
 	}
-	/*
 	for(int i = 0; i < 1; i++) {
 		case_random(500,2500,12500,500,2500);
 	}
-	*/
 	cout << "0 0 0" << endl;
 }

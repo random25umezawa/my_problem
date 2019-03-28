@@ -17,23 +17,31 @@ void dijkstra(int s, graph &g) {
 	for(int i = 1; i <= 500; i++) {
 		ds[s][i] = INF;
 	}
+	vector<bool> arrived(501);
 	priority_queue<P> q;
 	P start(0,s);
+	ds[s][s] = 0;
 	q.push(start);
 	while(!q.empty()) {
 		P p = q.top();	q.pop();
 		int cost = p.first;
 		int now = p.second;
-		if(ds[s][now]==INF || ds[s][now]>cost) {
-			ds[s][now] = cost;
+		if(arrived[now]) continue;
+		arrived[now] = true;
+		//if(ds[s][now]==INF || ds[s][now]>cost) {
+			//ds[s][now] = cost;
 			for(int i = 0; i < g[now].size(); i++) {
 				P e = g[now][i];
 				int next = e.first;
 				int d = e.second;
-				P new_edge(cost+d,next);
-				q.push(new_edge);
+				int new_cost = cost+d;
+				if(ds[s][next]>new_cost) {
+					ds[s][next] = new_cost;
+					P new_edge(new_cost,next);
+					q.push(new_edge);
+				}
 			}
-		}
+		//}
 	}
 }
 
