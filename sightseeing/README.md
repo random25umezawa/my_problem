@@ -16,14 +16,14 @@ Y博士の提案する訪問順序を守って全ての観光スポットを訪�
 入力は、複数のデータセットから構成され、1つの入力に含まれるデータセットの数は25以下である。
 各データセットの形式は次の通りである。
 
-N M S
-l<sub>1</sub> r<sub>1</sub> d<sub>1</sub>
-...
-l<sub>N</sub> r<sub>N</sub> d<sub>N</sub>
-p<sub>1</sub> a<sub>1</sub>
-...
-p<sub>M</sub> a<sub>M</sub>
-s<sub>1</sub> ... s<sub>S</sub>
+N M S<br>
+l<sub>1</sub> r<sub>1</sub> d<sub>1</sub><br>
+...<br>
+l<sub>N</sub> r<sub>N</sub> d<sub>N</sub><br>
+p<sub>1</sub> a<sub>1</sub><br>
+...<br>
+p<sub>M</sub> a<sub>M</sub><br>
+s<sub>1</sub> ... s<sub>S</sub><br>
 
 入力は全て整数値で与えられる。
 

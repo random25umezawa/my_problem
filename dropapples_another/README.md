@@ -19,10 +19,10 @@
 入力は複数のデータセットからなる。データセットの数は125以下である。
 各データセットは次の形式で表される。
 
-n
-x<sub>1</sub> y<sub>1</sub> v<sub>1</sub>
-...
-x<sub>n</sub> y<sub>n</sub> v<sub>n</sub>
+n<p>
+x<sub>1</sub> y<sub>1</sub> v<sub>1</sub><p>
+...<p>
+x<sub>n</sub> y<sub>n</sub> v<sub>n</sub><p>
 
 nは落ちてくるりんごの数を表し、x<sub>i</sub>はりんごiの横の位置、y<sub>i</sub>はりんごiのゲーム開始時の高さ、v<sub>i</sub>はりんごiの落下速度を表す。
 nは正の整数であり、125を超えない。
