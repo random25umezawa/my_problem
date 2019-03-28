@@ -1,6 +1,6 @@
 # 完成済み問題一覧
 
-D - [観光スポット](./tree/master/sightseeing)
+D - [観光スポット](/sightseeing)
 
 # 問題の作り方
 
