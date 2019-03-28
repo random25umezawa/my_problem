@@ -18,7 +18,7 @@ void dijkstra(int s, graph &g) {
 		ds[s][i] = INF;
 	}
 	vector<bool> arrived(501);
-	priority_queue<P> q;
+	priority_queue<P,vector<P>,greater<P> > q;
 	P start(0,s);
 	ds[s][s] = 0;
 	q.push(start);
