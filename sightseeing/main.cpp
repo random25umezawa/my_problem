@@ -26,8 +26,8 @@ void dijkstra(int s, graph &g) {
 		int now = p.second;
 		if(ds[s][now]==INF || ds[s][now]>cost) {
 			ds[s][now] = cost;
-			for(int i = 0; i < g[s].size(); i++) {
-				P e = g[s][i];
+			for(int i = 0; i < g[now].size(); i++) {
+				P e = g[now][i];
 				int next = e.first;
 				int d = e.second;
 				P new_edge(cost+d,next);
